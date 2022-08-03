@@ -1,0 +1,18 @@
+baseURL: 'http://book.mwmbl.org/'
+languageCode: 'en-us'
+title: 'The Book of mwmbl'
+theme: hugo-book
+
+# enableGitInfo: true
+
+# Needed for mermaid/katex shortcodes
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 1
+
+params:
+  BookMenuBundle: '/menu'
+  BookLogo: 'icon.png'
