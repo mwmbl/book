@@ -2,8 +2,6 @@
 headless = true
 +++
 
-
-- [Why?]({{< relref "/page/why" >}})
 - [Principles]()
 - [Roadmap]({{< relref "/page/roadmap" >}})
 - [Organization]()
@@ -12,13 +10,16 @@ headless = true
 <br>
 
 - **Working Groups**
-- [Search]()
-    - [Distributed crawling]()
-- [Web standards and interoperability]()
+- [Communication and Community]()
+- [Incorporation]()
+- [Webmaster Tools]()
+- [Mwmbl Platform]()
+- [Infrastructure]()
+- [Search Quality]()
+- [Search Engineering]()
+- [Web Standards and Interoperability]()
 - [Localization]()
-- [Semantic web]()
-- [User Experience]()
-- [Communication and community]()
+- [Semantic Web and Structured Data]()
 
 <br>
 
