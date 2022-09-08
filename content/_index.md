@@ -1,11 +1,10 @@
 # The Book of Mwmbl
 
-
-
 ## Mission
 
 Mwmbl's mission is to benefit humanity by making the world's knowledge accessible to everyone without bias or 
 hindrance, guided by community instead of profit.
+
 
 ## Vision
 
@@ -13,6 +12,7 @@ Mwmbl will be the standard place that people go to search the web, because of it
 freedom from ads and the influence of advertisers, and its reputation for promoting a more ethical internet. We 
 will have an active community of supporters that help monitor and improve search quality, and volunteer their 
 resources to help crawl the web.
+
 
 ## Values
 
@@ -25,6 +25,7 @@ taken into consideration when ranking pages.
 - Champion Diversity: we celebrate and encourage diversity of all types and believe it makes us stronger
 - Preserve Privacy: we believe people should be able to use the internet without fear of surveillance or loss of privacy
 
+
 ## Curating the Web
 
 Mwmbl volunteers (Mwmblers) are responsible for curating the Mwmbl view of the web. Every search engine has its 
@@ -36,6 +37,7 @@ following the ranking guidelines:
  3. Results should be compatible with Mwmbl _values_
 
 In general, relevance takes priority when ranking.
+
 
 ### Mwmbl Curated Sites
 
