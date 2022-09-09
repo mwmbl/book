@@ -9,7 +9,7 @@ lastmod: "2022-01-15"
 # Mwmbl Roadmap
 
 Our roadmap is divided into product, organisation and community. For each of these we have medium term goals - 
-within the next five years, and long term goals beyond that.
+within the next five years, and long term goals.
 
 ## Product
 
@@ -52,11 +52,29 @@ Webmaster tools:
 - Incorporate the main organisation in the UK as a non-profit
 - Get registered charity status in the UK
 - Incorporate a non-profit in the US
+- Build a team of 7 full-time employees
+  - CEO
+  - Director of Strategy and Advocacy
+  - Director of Communications
+  - Search Engineer
+  - Software Engineer (Back-end)
+  - Front-end Developer
+  - Infrastructure Engineer
 
 ### Long term goals
 
 - Build a framework for incorporating non-profits in new locales
 - Support the formation of locale-specific Mwmbl non-profits across the world
+- Build to full team of 20-30 employees
 
+## Financial
+
+### Medium term goals
+
+Total yearly revenue goal of £1.5m, split 70% from sales and 30% from donations.
+ 
 ## Community
 
+### Medium term goals
+
+  - 
