@@ -52,10 +52,11 @@ Webmaster tools:
 - Incorporate the main organisation in the UK as a non-profit
 - Get registered charity status in the UK
 - Incorporate a non-profit in the US
-- Build a team of 7 full-time employees
+- Build a team of 8 full-time employees
   - CEO
   - Director of Strategy and Advocacy
   - Director of Communications
+  - CTO
   - Search Engineer
   - Software Engineer (Back-end)
   - Front-end Developer
@@ -65,16 +66,10 @@ Webmaster tools:
 
 - Build a framework for incorporating non-profits in new locales
 - Support the formation of locale-specific Mwmbl non-profits across the world
-- Build to full team of 20-30 employees
+- Build the parent organisation to full team of 20-30 employees
 
-## Financial
-
-### Medium term goals
-
-Total yearly revenue goal of £1.5m, split 70% from sales and 30% from donations.
- 
 ## Community
 
 ### Medium term goals
 
-  - 
+  - Build up our community of crawlers to 10,000 daily active crawlers
