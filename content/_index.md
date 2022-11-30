@@ -1,5 +1,15 @@
 # The Book of Mwmbl
 
+Mwmbl is a free search engine with a focus on freedom, user experience, and community.
+
+- **Freedom:** the code is open source under the AGPL license
+- **User experience:** there are no adverts and we prioritise speed and search quality
+- **Community:** the search engine serves the community and the community guides search engine rankings and development
+
+We also need an organisation, Mwmbl Foundation, to manage and deliver
+this. This book is a blueprint for how to achieve our goals in the
+development of the search engine and the foundation.
+
 ## Mission
 
 Mwmbl's mission is to benefit humanity by making the world's knowledge accessible to everyone without bias or 
