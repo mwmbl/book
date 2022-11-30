@@ -1,6 +1,6 @@
 baseURL: 'http://book.mwmbl.org/'
 languageCode: 'en-us'
-title: 'The Book of mwmbl'
+title: 'The Book of Mwmbl'
 theme: hugo-book
 
 # enableGitInfo: true
