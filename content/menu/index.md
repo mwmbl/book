@@ -2,14 +2,18 @@
 headless = true
 +++
 
-- [Principles]()
-- [Roadmap]({{< relref "/page/roadmap" >}})
-- [Organization]()
-- [Processes]()
+- [**Overview**]({{ < relref "/"> }})
+- [Mission]({{< relref "/#mission"> }})
+- [Vision]({{< relref "/#vision"> }})
+- [Values]({{< relref "/#values"> }})
 
 <br>
 
-- **Working Groups**
+- [**Roadmap**]({{< relref "/page/roadmap" >}})
+
+<br>
+
+- [**Working Groups**]({{< relref "/page/working-groups" >}})
 - [Communication and Community]()
 - [Incorporation]()
 - [Webmaster Tools]()
