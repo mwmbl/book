@@ -29,7 +29,7 @@ headless = true
 
 - **Be a part of mwmbl**
 - [Donate](https://opencollective.com/mwmbl)
-- [Volunteer]()
 - [Contribute](https://github.com/mwmbl)
 - [Join the chat](https://matrix.to/#/#mwmbl:matrix.org)
 - [Follow us](https://twitter.com/mwmblorg)
+- [Watch](https://www.youtube.com/@mwmbl)
