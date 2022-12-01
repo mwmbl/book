@@ -2,10 +2,10 @@
 headless = true
 +++
 
-- [**Overview**]({{ < relref "/"> }})
-- [Mission]({{< relref "/#mission"> }})
-- [Vision]({{< relref "/#vision"> }})
-- [Values]({{< relref "/#values"> }})
+- [**Overview**]({{ < relref "/" >}})
+- [Mission]({{< relref "/#mission" >}})
+- [Vision]({{< relref "/#vision" >}})
+- [Values]({{< relref "/#values" >}})
 
 <br>
 
