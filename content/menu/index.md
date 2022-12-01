@@ -2,7 +2,7 @@
 headless = true
 +++
 
-- **[Overview]({{ < relref "/" >}})**
+- [**Overview**]({{< relref "/" >}})
 - [Mission]({{< relref "/#mission" >}})
 - [Vision]({{< relref "/#vision" >}})
 - [Values]({{< relref "/#values" >}})
@@ -14,7 +14,7 @@ headless = true
 <br>
 
 - [**Working Groups**]({{< relref "/page/working-groups" >}})
-- [Communication and Community]({{< relref "/page/working-groups/#communication-and-community" >}})
+- [Community and Communication]({{< relref "/page/working-groups/#community-and-communication" >}})
 - [Incorporation]({{< relref "/page/working-groups/#communication-and-community" >}})
 - [Webmaster Tools]({{< relref "/page/working-groups/#webmaster-tools" >}})
 - [Mwmbl Platform]({{< relref "/page/working-groups/#mwmbl-platform" >}})
