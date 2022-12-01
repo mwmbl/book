@@ -19,6 +19,7 @@ and let us know how you'd like to be involved.
 This group is responsible for liasing with the Mwmbl community, and
 promoting Mwmbl via blogging, social media and traditional media. So
 far we have a [blog](https://blog.mwmbl.org), a [YouTube channel](https://www.youtube.com/@mwmbl)
+and a [Twitter account](https://twitter.com/mwmblorg),
 and we have a very long way to go in terms of filling them out!
 
 We need creators of all types including writers, designers and video creators who
