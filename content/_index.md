@@ -1,6 +1,6 @@
 # The Book of Mwmbl
 
-Mwmbl is a free search engine with a focus on freedom, user experience, and community.
+[Mwmbl](https://mwmbl.org) is a free search engine with a focus on freedom, user experience, and community.
 
 - **Freedom:** the code is open source under the AGPL license
 - **User experience:** there are no adverts and we prioritise speed and search quality
