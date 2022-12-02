@@ -14,9 +14,9 @@ headless = true
 <br>
 
 - [**Roadmap**]({{< relref "/page/roadmap" >}})
-- [**Product**]({{< relref "/page/roadmap#product" >}})
-- [**Organisation**]({{< relref "/page/roadmap#organisation" >}})
-- [**Community**]({{< relref "/page/roadmap#community" >}})
+- [Product]({{< relref "/page/roadmap#product" >}})
+- [Organisation]({{< relref "/page/roadmap#organisation" >}})
+- [Community]({{< relref "/page/roadmap#community" >}})
 
 <br>
 
