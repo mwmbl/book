@@ -3,10 +3,10 @@
 [Mwmbl](https://mwmbl.org) is a free search engine with a focus on freedom, user experience, and community.
 
 - **Freedom:** the code is open source under the AGPL license
-- **User experience:** there are no adverts and we prioritise speed and search quality
+- **User experience:** there are no adverts, and we prioritize speed and search quality
 - **Community:** the search engine serves the community and the community guides search engine rankings and development
 
-We also need an organisation, Mwmbl Foundation, to manage and deliver
+We also need an organization, Mwmbl Foundation, to manage and deliver
 this. This book is a blueprint for how to achieve our goals in the
 development of the search engine and the foundation.
 
@@ -55,7 +55,7 @@ In general, relevance takes priority when ranking.
 
 ### Mwmbl Curated Sites
 
-Crawling is prioritised by giving a higher weighting to sites that our community champions. These _curated sites_ 
+Crawling is prioritized by giving a higher weighting to sites that our community champions. These _curated sites_ 
 are chosen by the community because they contain high quality content and are compatible with our values.
 
 
