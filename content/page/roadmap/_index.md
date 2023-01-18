@@ -8,7 +8,7 @@ lastmod: "2022-01-15"
 
 # Mwmbl Roadmap
 
-Our roadmap is divided into product, organisation and community. For each of these we have medium term goals - 
+Our roadmap is divided into product, organization and community. For each of these, we have medium term goals - 
 within the next five years, and long term goals.
 
 ## Product
@@ -23,7 +23,7 @@ Search:
 Curation:
 - Allow users to log into Mwmbl
 - Offer paid plans along with a free one
-- Build a reward system similar to StackOverflow to recognise contributions of users
+- Build a reward system similar to Stack Overflow to recognize contributions of users
 - Allow users to suggest a site to crawl
 - Allow users to suggest a new result for a query
 - Allow them to reorder and remove results for a query
@@ -45,11 +45,11 @@ Curation:
 Webmaster tools:
 - Enterprise offerings
 
-## Organisation
+## Organization
 
 ### Medium term goals
 
-- Incorporate the main organisation in the UK as a non-profit
+- Incorporate the main organization in the UK as a non-profit
 - Get registered charity status in the UK
 - Incorporate a non-profit in the US
 - Build a team of 8 full-time employees
@@ -66,7 +66,7 @@ Webmaster tools:
 
 - Build a framework for incorporating non-profits in new locales
 - Support the formation of locale-specific Mwmbl non-profits across the world
-- Build the parent organisation to full team of 20-30 employees
+- Build the parent organization to full team of 20-30 employees
 
 ## Community
 
