@@ -17,6 +17,7 @@ headless = true
 - [Product]({{< relref "/page/roadmap#product" >}})
 - [Organisation]({{< relref "/page/roadmap#organisation" >}})
 - [Community]({{< relref "/page/roadmap#community" >}})
+- [Tracking Progress]({{< relref "/page/progress" >}})
 
 <br>
 
