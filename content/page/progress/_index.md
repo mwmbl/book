@@ -60,7 +60,7 @@ Number of pages crawled per day:
  - **Points per million pages:** 50
  - **Max total points:** 150,000
  - **Benchmark:** Google
-   (apparently)[https://www.kevin-indig.com/googles-index-is-smaller-than-we-think-and-might-not-grow-at-all/]
+   [apparently](https://www.kevin-indig.com/googles-index-is-smaller-than-we-think-and-might-not-grow-at-all/)
    indexed around 100 billion pages at the time of writing, and we
    need to refresh our index at least once a month.
  - **Current:** 1 million (50 points)
