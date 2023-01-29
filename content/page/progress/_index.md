@@ -94,8 +94,8 @@ Number of volunteers:
  - **Goal:** 100,000 active volunteers each month
  - **Points per volunteer:** 1
  - **Max total points:** 100,000
- - **Benchmarks:** (Number of Wikipedia
-   editors)[https://en.wikipedia.org/wiki/Wikipedia:Wikipedians#Number_of_editors]:
+ - **Benchmarks:** [Number of Wikipedia
+   editors](https://en.wikipedia.org/wiki/Wikipedia:Wikipedians#Number_of_editors):
    126,000 active per month
  - **Current:** 26 (based off Firefox extension stats) (26 points)
 
