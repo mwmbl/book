@@ -35,6 +35,8 @@ headless = true
 
 <br>
 
+- [**Developers**]({{< relref "/page/developers" >}})
+
 - **Be a part of mwmbl**
 - [Donate](https://opencollective.com/mwmbl)
 - [Contribute](https://github.com/mwmbl)
