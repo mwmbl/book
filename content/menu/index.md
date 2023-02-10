@@ -36,6 +36,10 @@ headless = true
 <br>
 
 - [**Developers**]({{< relref "/page/developers" >}})
+- [Local Installation]({{< relref "/page/developers/#local-installation" >}})
+- [Building your own index]({{< relref "/page/developers/#building-your-own-index" >}})
+
+<br>
 
 - **Be a part of mwmbl**
 - [Donate](https://opencollective.com/mwmbl)

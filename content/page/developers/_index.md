@@ -10,25 +10,36 @@ lastmod: "2023-02-05"
 
 ## Local installation
 
-We use [poetry](https://python-poetry.org/) to manage
+1. We use [poetry](https://python-poetry.org/) to manage
 dependencies. Follow the [installation
 instructions](https://python-poetry.org/docs/#installation) to install
 poetry on your machine.
 
-Clone the repo into a local directory and `cd` into the directory.
+2. Clone the repo into a local directory and `cd` into the directory.
 
-Then run
-```
-poetry shell
-poetry install
-```
-to enter a poetry shell and install dependencies.
+3. Use `pyenv` to install the right version of python for the project (currently `3.10`):
+	```
+	brew install pyenv
+	pyenv install 3.10
+	poetry env use 3.10
+	```
 
-Then run
-```
-python -m mwmbl.main
-```
-to start a local server running against a small index.
+4. Enter a poetry shell and install dependencies:
+	```
+	poetry shell
+	poetry install
+	```
+
+5. Start the local server against a small index:
+	```
+	python -m mwmbl.main
+	```
+
+6. Make a search request in chrome (or your favorite REST api tool):
+   ```
+   > http://localhost:5001/search?s=Newton
+   ```
+
 
 ## Building your own index
 
