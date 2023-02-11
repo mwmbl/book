@@ -22,6 +22,7 @@ poetry on your machine.
 	brew install pyenv
 	pyenv install 3.10
 	poetry env use 3.10
+    poetry config virtualenvs.in-project true
 	```
 
 4. Enter a poetry shell and install dependencies:
