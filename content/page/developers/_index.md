@@ -17,26 +17,26 @@ poetry on your machine.
 
 2. Clone the repo into a local directory and `cd` into the directory.
 
-3. Use `pyenv` to install the right version of python for the project (currently `3.10`):
+3. Ensure python version `3.10` is installed
+   
+4. Configure poetry to use python:
 	```
-	brew install pyenv
-	pyenv install 3.10
 	poetry env use 3.10
     poetry config virtualenvs.in-project true
 	```
 
-4. Enter a poetry shell and install dependencies:
+5. Enter a poetry shell and install dependencies:
 	```
 	poetry shell
 	poetry install
 	```
 
-5. Start the local server against a small index:
+6. Start the local server against a small index:
 	```
 	python -m mwmbl.main
 	```
 
-6. Make a search request in chrome (or your favorite REST api tool):
+7. Make a search request in chrome (or your favorite REST api tool):
    ```
    > http://localhost:5001/search?s=Newton
    ```
