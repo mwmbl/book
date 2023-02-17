@@ -35,6 +35,11 @@ headless = true
 
 <br>
 
+- [**Architecture**]({{< relref "/page/architecture" >}})
+- [Index Layout]({{< relref "/page/architecture/#Index Layout" >}})
+
+<br>
+
 - [**Developers**]({{< relref "/page/developers" >}})
 - [Local Installation]({{< relref "/page/developers/#local-installation" >}})
 - [Building your own index]({{< relref "/page/developers/#building-your-own-index" >}})
