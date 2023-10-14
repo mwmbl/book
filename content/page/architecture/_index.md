@@ -1,7 +1,7 @@
 ---
 weight: 3
 bookFlatSection: true
-title: "Developers"
+title: "Architecture"
 date: "2023-02-05"
 lastmod: "2023-02-05"
 ---
