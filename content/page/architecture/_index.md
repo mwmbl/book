@@ -30,6 +30,13 @@ The top level domain name `mwmbl.org` will switch to being a generic
 home page with information about the Mwmbl community.
 
 
+### Deprecating api.mwmbl.org
+
+We will also deprecate `api.mwmbl.org` and the API will be hosted at
+`xx.mwmbl.org/api/v1/`. This is part of the change to combine the API
+and front-end code using Django and Django Ninja.
+
+
 ## Index Layout
 The following diagram describes how the index is laid out:
 
