@@ -7,7 +7,28 @@ lastmod: "2023-02-05"
 ---
 
 # Architecture
-Note: This page is a work in progress - read everything with a grain of salt.
+
+## Domain architecture and handling multiple locales
+
+We are currently using the following sub-domains:
+ - mwmbl.org: hosting the search engine front end
+ - api.mwmbl.org: hosting the API
+ - book.mwmbl.org: this book
+
+Eventually we will have multiple Mwmbl instances, one for each country
+where there are enough volunteers to host an instance. In order to
+support this we will have subdomains in the format
+`xx.mwmbl.org` where xx is a [two letter country
+code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). We prefer to
+split the instances by country rather than language, since search
+results will vary by location. Initially, however, we will not have
+enough volunteers for many instances, so will start with
+`en.mwmbl.org` which will be a global instance for the English
+language.
+
+The top level domain name `mwmbl.org` will switch to being a generic
+home page with information about the Mwmbl community.
+
 
 ## Index Layout
 The following diagram describes how the index is laid out:
