@@ -13,6 +13,10 @@ headless = true
 
 <br>
 
+- [**Curation Guidelines**]({{< relref "/page/curating" >}})
+
+<br>
+
 - [**Roadmap**]({{< relref "/page/roadmap" >}})
 - [Product]({{< relref "/page/roadmap#product" >}})
 - [Organisation]({{< relref "/page/roadmap#organisation" >}})
