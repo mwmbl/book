@@ -46,11 +46,15 @@ your regular search engine. If you know that your query is
 particularly obscure, then it is probably not a good candidate for
 curation.
 
-Please do not curate queries if they are obscene, defamatory or
-discriminatory.
+Queries that are curated show up on the main page and are stored along
+with the curation in the database. There may be a temptation to use
+this as a sort of message board. Please don't do this. For example, do
+not curate queries if they are obscene, defamatory or discriminatory.
 
 We also do not want to curate mis-spellings - we have not implemented
-spelling correction yet, but curation is not the way to fix it.
+spelling correction yet, but curation is not the way to fix
+it. Curating mis-spellings will just use up index space that will not
+be needed once spelling correction is implemented.
 
 ## How to curate results
 
