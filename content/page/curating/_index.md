@@ -46,11 +46,11 @@ your regular search engine. If you know that your query is
 particularly obscure, then it is probably not a good candidate for
 curation.
 
-Please do not curate queries if:
+Please do not curate queries if they are obscene, defamatory or
+discriminatory.
 
- - They are obscene, defamatory or discriminatory
- - They contain mis-spellings - we have not implemented spelling
-   correction yet, but curation is not the way to fix it
+We also do not want to curate mis-spellings - we have not implemented
+spelling correction yet, but curation is not the way to fix it.
 
 ## How to curate results
 
