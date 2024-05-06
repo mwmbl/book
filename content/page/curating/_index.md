@@ -38,6 +38,13 @@ Results should be:
 
 It is also important _which_ queries are curated.
 
+## Supported languages
+
+Note that only **English language queries** are supported for
+now. This is because we need to moderate curations, and our moderator
+only speaks English fluently. As our community grows, we will start to
+support more languages.
+
 ## Choosing queries to curate
 
 Good queries to curate are those that are likely to be popular
@@ -118,5 +125,12 @@ Editing a search results page where there is a conflict of interest is
 not allowed. Specifically, self-promotion or promoting the site of an
 employer, relative or associate is not allowed.
 
+## Flagging unsuitable curations
 
+If you think that a curation does not meet the above criteria, please
+flag it for a moderator to take action. You need to specify a reason
+for flagging the curation. A moderator will then either revert the
+curation, or ignore it if they do not agree that the curation is not
+valid.
 
+Flagged curations do not show on the home page.
