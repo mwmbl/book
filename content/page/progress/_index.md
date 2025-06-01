@@ -2,8 +2,8 @@
 weight: 3
 bookFlatSection: true
 title: "Progress"
-date: "2023-01-28"
-lastmod: "2023-01-28"
+date: "2025-06-01"
+lastmod: "2025-06-01"
 ---
 
 # Tracking Progress Towards Becoming the Best Search Engine in the World
@@ -15,7 +15,9 @@ this metric can always be achieved by taking concrete steps. It also
 allows us to explain to people the enormity of the task we are
 undertaking, how far we have come, and how far we still have to go.
 
-TLDR; we are 1.2154% complete.
+This page does not update automatically, its latest update was on: 2025-06-01
+
+TLDR; we are 1.4163% complete.
 
 ## Philosophy and methodology
 
@@ -40,7 +42,7 @@ goals can be added. This means that the percentage complete value can
 decrease with time as new values are added, but the score does not
 decrease.
 
-## Version 0.1 (January 2023)
+## Progress Criteria Version 0.1 (January 2023-today)
 
 The criteria for each of these to be satisfactory and count towards
 the goal is still to be documented. For now use common sense, e.g. a
@@ -53,7 +55,7 @@ Git commits:
  - **Points per commit:** 1
  - **Max total points:** 100,000
  - **Benchmarks:** MediaWiki - 114,000 commits, Elasticsearch - 67,000 commits
- - **Current:** 225 (225 points)
+ - **Current:** 743 (743 points)
 
 Number of pages crawled per day:
  - **Goal:** 3 billion
@@ -63,7 +65,7 @@ Number of pages crawled per day:
    [apparently](https://www.kevin-indig.com/googles-index-is-smaller-than-we-think-and-might-not-grow-at-all/)
    indexed around 100 billion pages at the time of writing, and we
    need to refresh our index at least once a month.
- - **Current:** 1 million (50 points)
+ - **Current:** 2.5 million (150 points)
 
 NDCG score in our offline evaluation:
  - **Goal:** 80%
@@ -79,7 +81,7 @@ Blog posts:
  - **Points per post:** 100
  - **Max total points:** 25,000
  - **Benchmarks:** None, this is based on roughly one post a week for five years
- - **Current:** 2 (200 points)
+ - **Current:** 6 (600 points)
 
 Videos:
  - **Goal:** 1000
@@ -88,7 +90,7 @@ Videos:
  - **Benchmarks:** Analysis by TubeBuddy
    ([source](https://www.youtube.com/watch?v=OaPEiSSmn-A)), average
    number of videos on channels with 100,000 to 1,000,000 subscribers
- - **Current:** 6 (600 points)
+ - **Current:** 10 (1000 points)
 
 Number of volunteers:
  - **Goal:** 100,000 active volunteers each month
@@ -128,10 +130,10 @@ Number of commits to The Book of Mwmbl:
  - **Goal:** 10,000
  - **Points per commit:** 10
  - **Max total points:** 100,000
- - **Current:** 20 (200 points)
+ - **Current:** 44 (440 points)
 
 ## Grand totals
 
- - **Current points TOTAL**: 11,121
+ - **Current points TOTAL**: 12,959
  - **Maximum points TOTAL**: 915,000
- - **Percentage complete**: 1.2154%
+ - **Percentage complete**: 1.4163%
