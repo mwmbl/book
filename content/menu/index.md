@@ -44,6 +44,10 @@ headless = true
 
 <br>
 
+- [**Technical FAQ**]({{< relref "/page/technical_faq" >}})
+
+<br>
+
 - [**Developers**]({{< relref "/page/developers" >}})
 - [Local Installation]({{< relref "/page/developers/#local-installation" >}})
 - [Building your own index]({{< relref "/page/developers/#building-your-own-index" >}})
