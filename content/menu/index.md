@@ -13,6 +13,10 @@ headless = true
 
 <br>
 
+- [**Community**]({{< relref "/page/community" >}})
+
+<br>
+
 - [**Curation Guidelines**]({{< relref "/page/curating" >}})
 
 <br>

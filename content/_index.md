@@ -10,9 +10,7 @@ We also need an organisation, Mwmbl Foundation, to manage and deliver
 this. This book is a blueprint for how to achieve our goals in the
 development of the search engine and the foundation.
 
-The book is a living document in that it is continuously updated. This
-is the very first working draft of this document (published on 2nd
-December 2022), so expect a lot to change!
+The book is a living document in that it is continuously updated.
 
 ## Mission
 
