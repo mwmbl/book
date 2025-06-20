@@ -12,7 +12,7 @@ The community is the most important part of Mwmbl, since everything we
 do depends on you. We aim to be one of the most friendly, diverse and
 welcoming communities on the internet.
 
-The main place we hang out is on [our Matrix server](https://matrix.to/#/#mwmbl:matrix.org)
+The main place we hang out is on [our Matrix Space](https://matrix.to/#/#mwmbl:matrix.org)
 but we also have a [Discord server](https://discord.gg/SJF689E3Rv),
 and a [YouTube channel](https://www.youtube.com/@mwmbl), along with a
 bunch of unmaintained socials...
@@ -54,7 +54,7 @@ we can free up resources on the central server.
 
 In order to run the crawler you need an API key.
 If you would like to run the crawler, please get in touch either on
-[our Matrix server](https://matrix.to/#/#mwmbl:matrix.org) or by
+[our Matrix Space](https://matrix.to/#/#mwmbl:matrix.org) or by
 sending an email to [info@mwmbl.org](mailto:info@mwmbl.org).
 
 Please give a few words about yourself and why you are interested in

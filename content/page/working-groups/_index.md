@@ -10,7 +10,7 @@ lastmod: "2022-12-01"
 
 If you want to help out with Mwmbl, this is the place to be! Working
 groups allow people to coordinate work on a specific aspect of
-Mwmbl. Get in touch on our [Matrix server](https://matrix.to/#/#mwmbl:matrix.org) 
+Mwmbl. Get in touch on our [Matrix Space](https://matrix.to/#/#mwmbl:matrix.org)
 and let us know how you'd like to be involved.
 
 
