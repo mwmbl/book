@@ -75,8 +75,8 @@ Once we've approved your application, we'll send you an API key.
 1. **Clone the repository** (if you haven't already):
 
    ```bash
-   git clone https://github.com/your-org/mwmbl-crawler.git
-   cd mwmbl-crawler
+   git clone https://github.com/mwmbl/mwmbl.git
+   cd mwmbl
    ```
 
 2. **Set your API key**
