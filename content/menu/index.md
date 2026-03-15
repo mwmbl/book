@@ -14,6 +14,8 @@ headless = true
 <br>
 
 - [**Community**]({{< relref "/page/community" >}})
+- [Socials]({{< relref "/page/community#socials" >}})
+- [Running the Crawler]({{< relref "/page/community#running-the-mwmbl-crawler-with-docker-compose" >}})
 
 <br>
 
