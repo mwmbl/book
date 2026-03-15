@@ -156,6 +156,154 @@ docker exec -it mwmbl-crawler bash
 
 ---
 
+## Running on Hetzner Cloud (ARM)
+
+For a cost-effective 24/7 crawler setup, we recommend using Hetzner Cloud ARM instances. This guide walks you through setting up a dedicated crawler server.
+
+### 1. Choosing a Server
+
+The best value-for-money option is the **Hetzner CAX11** instance:
+
+- **Specs**: 2 vCPU (ARM64), 4GB RAM, 40GB NVMe
+- **Location**: Falkenstein (DE) or Nuremberg (DE) recommended (close to Mwmbl core infrastructure)
+- **OS**: Ubuntu 24.04 LTS
+- **Networking**: Ensure IPv6 is enabled
+
+### 2. Initial Server Hardening
+
+After creating the instance, SSH into it as root to create a dedicated user and secure the machine.
+
+**Create the 'crawler' user:**
+
+```bash
+# Create the user
+adduser crawler
+usermod -aG sudo crawler
+usermod -aG docker crawler
+
+# Setup SSH access for the new user
+mkdir -p /home/crawler/.ssh
+cp /root/.ssh/authorized_keys /home/crawler/.ssh/
+chown -R crawler:crawler /home/crawler/.ssh
+chmod 700 /home/crawler/.ssh
+chmod 600 /home/crawler/.ssh/authorized_keys
+```
+
+**Basic Firewall (UFW):**
+
+```bash
+ufw allow ssh
+ufw enable
+```
+
+### 3. Install Docker
+
+Log in as the crawler user and run the official Docker installation script:
+
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+```
+
+### 4. Deploying the Mwmbl Crawler
+
+**Clone the repository:**
+
+```bash
+git clone https://github.com/mwmbl/mwmbl.git
+cd mwmbl
+```
+
+**Create the configuration:**
+
+Create a `.env` file in the mwmbl directory:
+
+```env
+MWMBL_API_KEY=your_api_key_here
+MWMBL_CONTACT_INFO=yourname@example.com (Mwmbl Crawler Operator)
+```
+
+> **Note**: To get an API key, join the [Mwmbl Matrix channel](https://matrix.to/#/#mwmbl:matrix.org) or email [info@mwmbl.org](mailto:info@mwmbl.org).
+
+**The Docker Compose File:**
+
+Use the following `docker-compose.yml` optimized for the CAX11 (4GB RAM) hardware:
+
+```yaml
+services:
+  mwmbl-crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile.crawler
+    image: mwmbl/crawler:latest
+    container_name: mwmbl-crawler
+    restart: unless-stopped
+    depends_on:
+      redis:
+        condition: service_healthy
+    environment:
+      - MWMBL_API_KEY=${MWMBL_API_KEY}
+      - MWMBL_CONTACT_INFO=${MWMBL_CONTACT_INFO}
+      - CRAWLER_WORKERS=4
+      - CRAWLER_THREADS=30
+      - CRAWL_DELAY_SECONDS=0.1
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - crawler_data:/root/.mwmbl
+    networks:
+      - mwmbl-net
+
+  redis:
+    image: redis:alpine
+    container_name: mwmbl-redis
+    restart: unless-stopped
+    command: ["redis-server", "--save", "60", "1", "--loglevel", "warning"]
+    volumes:
+      - redis_data:/data
+    networks:
+      - mwmbl-net
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+
+networks:
+  mwmbl-net:
+
+volumes:
+  redis_data:
+  crawler_data:
+```
+
+**Launch the Crawler:**
+
+```bash
+docker compose up -d --build
+```
+
+### 5. Maintenance Commands
+
+| Action | Command |
+|--------|---------|
+| Check Logs | `docker compose logs -f mwmbl-crawler` |
+| Monitor Resources | `docker stats` |
+| Update Crawler | `git pull && docker compose pull && docker compose up -d --build` |
+| Restart | `docker compose restart` |
+
+### 6. Local Shortcuts (Optional)
+
+To make managing the crawler easier, add this to your local `~/.ssh/config` file:
+
+```
+Host mwmbl
+    HostName [YOUR_SERVER_IP]
+    User crawler
+    IdentityFile ~/.ssh/your_key
+```
+
+You can then log in by simply typing `ssh mwmbl`.
+
+---
+
 ## Need Help?
 
 If you run into any issues or have questions, feel free to [open an issue](https://github.com/mwmbl/mwmbl/issues) or get in touch with the team.
