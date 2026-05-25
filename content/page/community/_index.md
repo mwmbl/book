@@ -38,19 +38,6 @@ If you'd like to help in any way, just get in touch and let us know.
 
 You can easily run the Mwmbl crawler on your own server using Docker Compose. This setup includes both the crawler and a Redis instance for task coordination and state management.
 
-## New crawler vs old crawler
-
-The new crawler lives in the [Mwmbl repo](https://github.com/mwmbl/mwmbl/).
-This crawler is considerably more resource intensive compared to the
-old crawler, which was a relatively simple Python script. The problem
-with the [old crawler](https://github.com/mwmbl/crawler-script/) was
-that in order to run it, we needed to use a
-lot of resources on the central server, which was slowing down the
-main site. This was not good.
-
-So if you're able to run the new crawler, please do. Eventually, we
-will ask people who are still running the old crawler to stop so that
-we can free up resources on the central server.
 
 ## API Key
 
