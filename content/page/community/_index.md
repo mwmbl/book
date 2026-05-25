@@ -54,21 +54,25 @@ we can free up resources on the central server.
 
 ## API Key
 
-In order to run the crawler you need an API key.
-If you would like to run the crawler, please get in touch either on
-[our Matrix Space](https://matrix.to/#/#mwmbl:matrix.org) or by
-sending an email to [info@mwmbl.org](mailto:info@mwmbl.org).
+In order to run the crawler you need an API key. You can create one
+yourself:
 
-Please give a few words about yourself and why you are interested in
-crawling for Mwmbl.
+1. Go to [mwmbl.org](https://mwmbl.org) and log in (or register a
+   new account).
+2. Click **Account** in the navigation.
+3. Under **API Keys**, click **Create API key**.
+4. Copy the key immediately — it is only shown once and cannot be
+   retrieved later.
 
-Once we've approved your application, we'll send you an API key.
+Note that each page you crawl is recorded against your account. This
+helps us identify and address any fraudulent or harmful crawling
+activity.
 
 ## Prerequisites
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
-- A Mwmbl API key (you can [request one here](#))
+- A Mwmbl API key (create one via [Account → Create API key](https://mwmbl.org/account/))
 
 ---
 
@@ -225,7 +229,7 @@ MWMBL_API_KEY=your_api_key_here
 MWMBL_CONTACT_INFO=yourname@example.com (Mwmbl Crawler Operator)
 ```
 
-> **Note**: To get an API key, join the [Mwmbl Matrix channel](https://matrix.to/#/#mwmbl:matrix.org) or email [info@mwmbl.org](mailto:info@mwmbl.org).
+> **Note**: To get an API key, log in at [mwmbl.org](https://mwmbl.org) and go to **Account → Create API key**. The key is shown only once, so copy it straight away.
 
 **The Docker Compose File:**
 
