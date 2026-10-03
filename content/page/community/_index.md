@@ -105,7 +105,10 @@ activity.
 You can configure the crawler via environment variables in the `docker-compose.yml` file or `.env` file:
 
 - `MWMBL_API_KEY` – **Required**: Your API key.
-- `CRAWLER_WORKERS` – Number of parallel processes to run (default: 2).
+- `MWMBL_CONTACT_INFO` – **Required**: An email address or URL site owners can use to reach you.
+- `CRAWLER_WORKERS` – Number of crawl processes to run (default: 2).
+- `CRAWL_THREADS` – Number of threads per crawl process, each fetching and parsing one page at a time (default: 20). Total concurrent fetches are `CRAWLER_WORKERS × CRAWL_THREADS`; allow roughly 20MB of RAM for each.
+- `CRAWL_DELAY_SECONDS` – Delay each thread waits between the URLs it crawls (default: 0).
 - `REDIS_URL` – Redis connection string (default: `redis://redis:6379`).
 
 ---
@@ -238,11 +241,11 @@ services:
       - MWMBL_API_KEY=${MWMBL_API_KEY}
       - MWMBL_CONTACT_INFO=${MWMBL_CONTACT_INFO}
       - CRAWLER_WORKERS=4
-      - CRAWLER_THREADS=30
+      - CRAWL_THREADS=10
       - CRAWL_DELAY_SECONDS=0.1
       - REDIS_URL=redis://redis:6379
     volumes:
-      - crawler_data:/root/.mwmbl
+      - crawler_data:/home/mwmbl/.mwmbl
     networks:
       - mwmbl-net
 
