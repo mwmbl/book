@@ -105,8 +105,17 @@ activity.
 You can configure the crawler via environment variables in the `docker-compose.yml` file or `.env` file:
 
 - `MWMBL_API_KEY` – **Required**: Your API key.
-- `CRAWLER_WORKERS` – Number of parallel processes to run (default: 2).
+- `CRAWLER_WORKERS` – Number of parallel worker processes to run (default: 2).
+- `CRAWL_THREADS` - Number of parallel threads to run across all crawlers.
 - `REDIS_URL` – Redis connection string (default: `redis://redis:6379`).
+
+### Recommended Configuration
+
+As of writing, Mwmbl doesn't have a recommended configuration for optimizing/maximizing the number of crawlers (workers and threads) to run.
+
+Each crawler spawns multiple threads. You can try increasing the number of workers and seeing if your machine handles it, or if it hangs or crashes.
+
+You can see if your crawlers work by running `docker compose logs` or checking the [old stats page](https://api.mwmbl.org/stats/) for your user's current score.
 
 ---
 
