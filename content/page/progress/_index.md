@@ -15,9 +15,8 @@ this metric can always be achieved by taking concrete steps. It also
 allows us to explain to people the enormity of the task we are
 undertaking, how far we have come, and how far we still have to go.
 
-This page does not update automatically, its latest update was on: 2025-06-01
-
-TLDR; we are 1.4163% complete.
+This page was last updated on June 6, 2025. At that time, we were
+1.4163% complete. For the most recent progress, check our [progress site](https://progress.mwmbl.org).
 
 ## Philosophy and methodology
 
