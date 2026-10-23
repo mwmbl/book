@@ -58,7 +58,7 @@ Git commits:
 
 Number of pages crawled per day:
  - **Goal:** 3 billion
- - **Points per million pages:** 50
+ - **Points per million pages:** 1.5
  - **Max total points:** 150,000
  - **Benchmark:** Google
    [apparently](https://www.kevin-indig.com/googles-index-is-smaller-than-we-think-and-might-not-grow-at-all/)
