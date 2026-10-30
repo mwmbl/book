@@ -126,3 +126,4 @@ post will be published!
 Feel free to post on socials, but please follow best practices for each platform
 and don't spam as it gives us a bad reputation.
 
+Thanks for supporting Mwmbl! Your contribution makes a real difference.
