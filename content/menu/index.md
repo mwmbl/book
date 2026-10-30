@@ -23,6 +23,10 @@ headless = true
 
 <br>
 
+- [**Writing Blog Posts**]({{< relref "/page/blog-posts" >}})
+
+<br>
+
 - [**Roadmap**]({{< relref "/page/roadmap" >}})
 - [Product]({{< relref "/page/roadmap#product" >}})
 - [Organisation]({{< relref "/page/roadmap#organisation" >}})
