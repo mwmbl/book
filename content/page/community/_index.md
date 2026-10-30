@@ -29,6 +29,7 @@ There are many ways to help:
  - [Curating content](https://book.mwmbl.org/page/curating/)
  - Contributing code
  - Writing documentation
+ - [Writing blog posts](https://book.mwmbl.prg/page/blog-posts/)
  - Supporting the community
  - Helping form official organisations
 
