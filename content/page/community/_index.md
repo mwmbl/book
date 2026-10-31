@@ -153,6 +153,37 @@ docker exec -it mwmbl-crawler bash
 
 ---
 
+## Automatic Updates (Recommended)
+
+The crawler image follows the `mwmbl/crawler:stable` tag, which is republished on every
+crawler release. To keep your crawler up to date without running anything by hand, install
+the systemd timer shipped in [`deploy/crawler/`](https://github.com/mwmbl/mwmbl/tree/main/deploy/crawler)
+of the repository:
+
+```bash
+sudo cp deploy/crawler/mwmbl-crawler-updater.service deploy/crawler/mwmbl-crawler-updater.timer /etc/systemd/system/
+echo 'MWMBL_REPO_DIR=/home/crawler/mwmbl' | sudo tee /etc/default/mwmbl-crawler-updater
+sudo systemctl daemon-reload
+sudo systemctl enable --now mwmbl-crawler-updater.timer
+```
+
+(`MWMBL_REPO_DIR` is the clone of the repository on your machine.) The timer runs
+`docker compose pull && docker compose up -d` once an hour at a random point within the hour,
+so the fleet of volunteer crawlers does not all restart at once.
+
+The server can also refuse an outdated crawler: if your crawler's version is below the
+minimum the server accepts, submitting results returns **426 Upgrade Required** and the
+crawler waits for the next update instead of submitting. If you see that in
+`docker compose logs -f`, an update is on its way — or run the two commands above yourself.
+
+To update manually instead:
+
+```bash
+docker compose pull && docker compose up -d
+```
+
+---
+
 ## Running on Hetzner Cloud (ARM)
 
 For a cost-effective 24/7 crawler setup, we recommend using Hetzner Cloud ARM instances. This guide walks you through setting up a dedicated crawler server.
@@ -283,7 +314,7 @@ docker compose up -d --build
 |--------|---------|
 | Check Logs | `docker compose logs -f mwmbl-crawler` |
 | Monitor Resources | `docker stats` |
-| Update Crawler | `git pull && docker compose pull && docker compose up -d --build` |
+| Update Crawler | `docker compose pull && docker compose up -d` |
 | Restart | `docker compose restart` |
 
 ### 6. Local Shortcuts (Optional)
