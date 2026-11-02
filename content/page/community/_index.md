@@ -272,7 +272,7 @@ services:
     environment:
       - MWMBL_API_KEY=${MWMBL_API_KEY}
       - MWMBL_CONTACT_INFO=${MWMBL_CONTACT_INFO}
-      - CRAWLER_WORKERS=4
+      - CRAWLER_WORKERS=5
       - CRAWL_THREADS=10
       - CRAWL_DELAY_SECONDS=0.1
       - REDIS_URL=redis://redis:6379
