@@ -114,6 +114,47 @@ You can configure the crawler via environment variables in the `docker-compose.y
 
 ---
 
+## Optimizing on First Run
+
+The best `CRAWLER_WORKERS` and `CRAWL_THREADS` depend on your CPU, RAM and connection. After your crawler is running for the first time, run the benchmark from the checkout you started it from:
+
+```bash
+make optimize
+```
+
+(`make crawler` is the same thing, as are `mwmbl benchmark` and `python -m mwmbl.crawler.benchmark`.)
+It takes several minutes. Nothing needs exporting: it reads the `.env` beside `docker-compose.yml`
+(or the file given with `--env-file`; anything already in your environment wins), and it needs no API key.
+
+For each combination it stops your crawler, restarts it with `CRAWLER_WORKERS` and `CRAWL_THREADS` set,
+waits out a 10 second warmup, measures for 30 seconds, and stops it again. It scores each combination by
+**fetches per minute**, read from the crawler's own Redis counter. It ends with a ranked table and the
+winner, and whether it finishes, fails or is interrupted with Ctrl+C, your crawler is put back with the
+settings it had before.
+
+By default the search climbs: threads go up for a process count until more of them fetch less than 10% more,
+and process counts go up until doubling them fetches less than 10% more. To try every combination, or to
+choose your own, pass flags through `ARGS`:
+
+```bash
+make optimize ARGS='--exhaustive --processes 1,2,4 --threads 25,50,100 --duration 60s'
+```
+
+Combinations whose estimated memory exceeds your machine's RAM are skipped (`--no-memory-check` runs them
+anyway). Results are appended to `benchmark-results-fetches-<date>.csv`.
+
+When it finishes, set the winning values in your `.env` or `docker-compose.yml` and run
+`docker compose up -d`. Some things to keep in mind:
+
+- Each combination runs once for only seconds, so differences under about 10% are noise. When two are
+  close, choose the one with fewer processes and threads.
+- It counts every URL fetched, not how many were new or worth indexing, and more threads always fetch
+  more. Treat the winner as the most your machine can usefully do, not a target to exceed: check the
+  crawler's logs for refusals, and stay within what the sites you crawl and your connection can bear.
+- Compose names its project after the directory, so run it from the checkout your crawler was started from.
+
+---
+
 ## Data Persistence
 
 Both services store data in named Docker volumes:
