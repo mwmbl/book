@@ -328,51 +328,11 @@ MWMBL_CONTACT_INFO=yourname@example.com (Mwmbl Crawler Operator)
 
 **The Docker Compose File:**
 
-Use the following `docker-compose.yml` optimized for the CAX11 (4GB RAM) hardware:
+Add the following `.env` -- optimized for the CAX11 (2 CPUs, 4GB RAM) hardware (or any similar hardware):
 
-```yaml
-services:
-  mwmbl-crawler:
-    build:
-      context: .
-      dockerfile: Dockerfile.crawler
-    image: mwmbl/crawler:latest
-    container_name: mwmbl-crawler
-    restart: unless-stopped
-    depends_on:
-      redis:
-        condition: service_healthy
-    environment:
-      - MWMBL_API_KEY=${MWMBL_API_KEY}
-      - MWMBL_CONTACT_INFO=${MWMBL_CONTACT_INFO}
-      - CRAWLER_WORKERS=5
-      - CRAWL_THREADS=10
-      - CRAWL_DELAY_SECONDS=0.1
-      - REDIS_URL=redis://redis:6379
-    volumes:
-      - crawler_data:/home/mwmbl/.mwmbl
-    networks:
-      - mwmbl-net
-
-  redis:
-    image: redis:alpine
-    container_name: mwmbl-redis
-    restart: unless-stopped
-    command: ["redis-server", "--save", "60", "1", "--loglevel", "warning"]
-    volumes:
-      - redis_data:/data
-    networks:
-      - mwmbl-net
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-
-networks:
-  mwmbl-net:
-
-volumes:
-  redis_data:
-  crawler_data:
+```
+CRAWLER_WORKERS=3
+CRAWL_THREADS=50
 ```
 
 **Launch the Crawler:**
