@@ -131,7 +131,13 @@ curl -fsSL https://raw.githubusercontent.com/mwmbl/mwmbl/main/deploy/crawler/ben
 ```
 
 From a checkout of the repository, `make optimize` is the same thing (as are `make crawler` and
-`python3 -m mwmbl.crawler.benchmark`).
+`python3 -m mwmbl.crawler.benchmark`). To read the script before running it, download it first:
+
+```bash
+curl -fsSLO https://raw.githubusercontent.com/mwmbl/mwmbl/main/deploy/crawler/benchmark.sh
+less benchmark.sh
+sh benchmark.sh
+```
 It takes several minutes. Nothing needs exporting: Docker Compose reads the `.env` beside `docker-compose.yml`
 as it does for the crawler (or the file given with `--env-file`), and the benchmark needs no API key.
 
