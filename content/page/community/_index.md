@@ -130,7 +130,7 @@ run `docker` with `sudo`, pipe it to `sudo sh` instead. To pass flags, put them 
 curl -fsSL https://raw.githubusercontent.com/mwmbl/mwmbl/main/deploy/crawler/benchmark.sh | sh -s -- --exhaustive
 ```
 
-From a checkout of the repository, `make optimize` is the same thing (as are `make crawler` and
+From a checkout of the repository, `./deploy/crawler/benchmark.sh` runs the copy in the checkout, and `make optimize` is the same thing (as are `make crawler` and
 `python3 -m mwmbl.crawler.benchmark`). To read the script before running it, download it first:
 
 ```bash
