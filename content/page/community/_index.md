@@ -124,10 +124,12 @@ curl -fsSL https://raw.githubusercontent.com/mwmbl/mwmbl/main/deploy/crawler/ben
 
 It needs nothing beyond what the crawler needs, plus `python3` 3.9 or later, which Linux and macOS
 already have: nothing is installed or built. The script downloads the benchmark and runs it. If you
-run `docker` with `sudo`, pipe it to `sudo sh` instead. To pass flags, put them after `sh -s --`:
+run `docker` with `sudo`, pipe it to `sudo sh` instead. If your user is not in the `docker` group, the
+script stops and tells you how to add it (`sudo usermod -aG docker $USER`, then log out and back in).
+To pass flags, put them after `sh -s --`:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/mwmbl/mwmbl/main/deploy/crawler/benchmark.sh | sh -s -- --exhaustive
+curl -fsSL https://raw.githubusercontent.com/mwmbl/mwmbl/main/deploy/crawler/benchmark.sh | sh -s -- --processes 1,2,4
 ```
 
 From a checkout of the repository, `./deploy/crawler/benchmark.sh` runs the copy in the checkout, and `make optimize` is the same thing (as are `make crawler` and
@@ -149,7 +151,7 @@ uv run mwmbl benchmark --runner process
 With another Python, `pip3 install -r deploy/crawler/benchmark-requirements.txt` first, then
 `python3 -m mwmbl.crawler.benchmark --runner process`, run from the checkout.
 
-It takes several minutes. Nothing needs exporting: Docker Compose reads the `.env` beside `docker-compose.yml`
+It takes 15 to 20 minutes. Nothing needs exporting: Docker Compose reads the `.env` beside `docker-compose.yml`
 as it does for the crawler (or the file given with `--env-file`), and the benchmark needs no API key.
 
 For each combination it stops your crawler, restarts it with `CRAWLER_WORKERS` and `CRAWL_THREADS` set,
@@ -158,18 +160,16 @@ waits out a 10 second warmup, measures for 30 seconds, and stops it again. It sc
 winner, and whether it finishes, fails or is interrupted with Ctrl+C, your crawler is put back with the
 settings it had before.
 
-By default the search climbs: threads go up for a process count until more of them fetch less than 10% more,
-and process counts go up until doubling them fetches less than 10% more. To try every combination, or to
-choose your own, pass flags:
+It tries every combination of 1 to 5 processes and 10, 25, 50 and 100 threads. To choose your own, pass flags:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/mwmbl/mwmbl/main/deploy/crawler/benchmark.sh | sh -s -- --exhaustive --processes 1,2,4 --threads 25,50,100 --duration 60s
+curl -fsSL https://raw.githubusercontent.com/mwmbl/mwmbl/main/deploy/crawler/benchmark.sh | sh -s -- --processes 1,2,4 --threads 25,50,100 --duration 60s
 ```
 
 or, from a checkout:
 
 ```bash
-make optimize ARGS='--exhaustive --processes 1,2,4 --threads 25,50,100 --duration 60s'
+make optimize ARGS='--processes 1,2,4 --threads 25,50,100 --duration 60s'
 ```
 
 Combinations whose estimated memory exceeds your machine's RAM are skipped (`--no-memory-check` runs them
