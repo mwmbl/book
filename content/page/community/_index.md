@@ -331,7 +331,7 @@ MWMBL_CONTACT_INFO=yourname@example.com (Mwmbl Crawler Operator)
 Add the following `.env` -- optimized for the CAX11 (2 CPUs, 4GB RAM) hardware (or any similar hardware):
 
 ```
-CRAWLER_WORKERS=3
+CRAWLER_WORKERS=2
 CRAWL_THREADS=50
 ```
 
