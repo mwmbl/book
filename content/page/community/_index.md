@@ -138,6 +138,17 @@ curl -fsSLO https://raw.githubusercontent.com/mwmbl/mwmbl/main/deploy/crawler/be
 less benchmark.sh
 sh benchmark.sh
 ```
+
+If you run the crawler from source instead of Docker Compose, use the process runner from a checkout
+that already runs your crawler (the crawler needs its Rust extension, so `pip3` alone is not enough):
+
+```bash
+uv run mwmbl benchmark --runner process
+```
+
+With another Python, `pip3 install -r deploy/crawler/benchmark-requirements.txt` first, then
+`python3 -m mwmbl.crawler.benchmark --runner process`, run from the checkout.
+
 It takes several minutes. Nothing needs exporting: Docker Compose reads the `.env` beside `docker-compose.yml`
 as it does for the crawler (or the file given with `--env-file`), and the benchmark needs no API key.
 
